@@ -23,9 +23,9 @@ drawings:
 css: unocss
 ---
 
-# Dropship
+# Dropship System di OnlineShop
 
-Anda dapat berjualan tanpa mempunyai barang
+(nama perusahaan disamarkan)
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -48,23 +48,28 @@ Anda dapat berjualan tanpa mempunyai barang
 # Business Model
 
 <div grid="~ cols-2 gap-4">
-  <div>
+<div>
 
-  - **Enabler** : Penjual dapat menjual barang dagangannya menggunakan sistem kita
-  - **Aggregator** : Sistem kita menggunakan API dari pihak ketika, contoh : https://luxury-distribution.com/
-  - **Client** : Dropshipper, contoh : https://www.krisshop.com/
-  - **Customer** : Pembeli membelui melalui client portal (website, mobile app)
+- **OnlineShop** : Nama Perusahaan
+- **Enabler** : Merchant dapat menjual barang dagangannya menggunakan sistem Dropship di OnlineShop, contoh : https://www.vinomofo.com/
+- **Aggregator** : Sistem Dropship mendapat barang dagangan menggunakan API dari pihak ketiga, contoh : https://luxury-distribution.com/
+- **Customer** : Pembeli membeli melalui website OnlineShop
 
-  </div>
-  <div>
-    <img
-      object-fit="contain"
-      width="400"
-      src="https://raw.githubusercontent.com/robbywh/s2-mti/main/assets/images/diagram.png"
-    />
-  </div>
+</div>
+<div>
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+A[Enabler] -->|use our system| B((Dropship System))
+    C[Aggregator] -->|our system using 3rd party provider| B
+    B --> D[OnlineShop]
+    D --> E([Customer])
+```
+
+</div>
 </div>
 
+<br>
 
 <style>
 h1 {
@@ -77,4 +82,3 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
-

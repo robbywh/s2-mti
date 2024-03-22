@@ -23,7 +23,7 @@ drawings:
 css: unocss
 ---
 
-# Dropship System di OnlineShop
+# Dropship System at OnlineShop
 
 (nama perusahaan disamarkan)
 
@@ -50,7 +50,7 @@ css: unocss
 <div grid="~ cols-2 gap-4">
 <div>
 
-- **OnlineShop** : Nama Perusahaan
+- **OnlineShop** : Nama Perusahaan yang disamarkan
 - **Enabler** : Merchant dapat menjual barang dagangannya menggunakan sistem Dropship di OnlineShop, contoh : https://www.vinomofo.com/
 - **Aggregator** : Sistem Dropship mendapat barang dagangan menggunakan API dari pihak ketiga, contoh : https://luxury-distribution.com/
 - **Customer** : Pembeli membeli melalui website OnlineShop
